@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#' xmlns:dcterms='http://purl.org/dc/terms/' xmlns:vCard='http://www.w3.org/2006/vcard/ns#'>
+  <rdf:Description rdf:about='.'>
+    <dcterms:description>EnzymeML Archive - EnzymeML</dcterms:description>
+    <dcterms:modified rdf:parseType='Resource'>
+      <dcterms:W3CDTF>2019-10-29T14:13:22Z</dcterms:W3CDTF>
+    </dcterms:modified>
+    <dcterms:created rdf:parseType='Resource'>
+      <dcterms:W3CDTF>2019-10-29T14:13:22Z</dcterms:W3CDTF>
+    </dcterms:created>
+    <dcterms:creator rdf:parseType='Resource'>
+      <vCard:hasName rdf:parseType='Resource'>
+        <vCard:family-name>Otten</vCard:family-name>
+        <vCard:given-name>Julia</vCard:given-name>
+      </vCard:hasName>
+      <vCard:hasEmail rdf:resource='s.malzacher@fz-juelich.de' />
+      <vCard:organization-name>FZ Juelich</vCard:organization-name>
+    </dcterms:creator>
+  </rdf:Description>
+</rdf:RDF>

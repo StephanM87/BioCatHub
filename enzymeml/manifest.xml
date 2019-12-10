@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omexManifest xmlns="http://identifiers.org/combine.specifications/omex-manifest">
+  <content location="./experiment.xml" format="http://identifiers.org/combine.specifications/sbml" master="true"/>
+  <content location="./data/Data.csv" format="text/csv" master="false"/>
+  <content location="." format="http://identifiers.org/combine.specifications/omex"/>
+  <content location="metadata.rdf" format="http://identifiers.org/combine.specifications/omex-metadata" master="false"/>
+</omexManifest>

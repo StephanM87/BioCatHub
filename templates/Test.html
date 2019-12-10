@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/skeleton.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/normalize.css') }}">   
+    
+    
+<title>
+Opening Site
+</title>
+</head>
+
+<body>
+<div class="container" style="display: block; margin-left: auto; margin-right: auto; text-align: center">
+<div class = "row" style="display: block; margin-left: auto; margin-right: auto; text-align: center">
+       
+        <h1>Please choose your reaction system</h1>
+
+
+                <label for="Batch_reactions">Batch</label>
+<a id="Batch_reactions" style="text-align: right" href="http://127.0.0.1:8000/transmission"> <img src="/static/Eppi.svg" style="height:200px; width:200px"> </a>
+<label for="Reactor_system">Continous</label>
+<p> <a id="Reactor_system" href="http://127.0.0.1:8000/transmission"> <img src="/static/Reaktor.svg" style="height:200px; width:200px"> </a> 
+<label for="Cascade_reaction">Multistep reaction</label>
+<p> <a id="Cascade_reaction" href="http://127.0.0.1:8000/transmission"> <img src="/static/Kaskaden reaktion.svg" style="height:200px; width:200px"> </a> 
+ 
+        <form action = http://127.0.0.1:8000/transmission/Auswertung_upload method="post">
+<p>     <h2> Upload file </h2>
+        <p><input type=file name ="filename"></p>
+        <p><input type="submit" value ="submit"></p>
+</p>
+</div>
+
+  
+</div>
+
+
+</body>
+
+</html>

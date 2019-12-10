@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <meta charset="utf-8"/>
+ 
+   
+    <link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/skeleton.css"/>
+    <script type = "text/javascript" src="/static/jquery-3.4.1.js"> </script>
+    <script type = "text/javascript" src="/static/Home2.js" > </script> 
+    <script type = "text/javascript" src="/static/fieldGenerator.js"> </script>
+    <script type = "text/javascript" src="/static/Parameter_grabber.js"> </script>
+    <script type = "text/javascript" src="/static/ParameterList.js"> </script>
+    <script type = "text/javascript" src="/static/table_builder.js"></script>
+<title>
+TEED Transmissionsheet 
+</title>
+</head>
+
+<body>
+<div class="container">
+
+    
+    <div class="row">
+
+
+        <h2 id="General_information">General information</h2>
+         
+                  
+                <div class="twelve columns" style="margin-left: 0%">
+                        <label for="last_name">last name</label>
+                       <input id="last_name" type="text" name="last_name" class = "last_name">
+                       <label for="given_name">given name</label>
+                       <input id="given_name" type="text" name="given_name" class = given_name> 
+                       <label for="Email_address">email address</label>
+                    <input id="Email_address" type="text" name="Email_address" class = "email-address">
+                       <label for="Instituion">Instituion</label>
+                      <input id="Instituion" type="text" name="Instituion" class = "Instituion">
+                </div>
+        
+
+    <h2>Biocatalyst</h2>
+          <div class="four columns" style="margin-left: 0%">
+                <label for="Enzyme_Name">Enzyme Name</label>
+               <p> <input id="Enzyme_Name" type="text" name="Enzyme_Name" class = "Enzyme_Name"> </p>
+               <label for="Reaction_name">Reaction name</label>
+               <p> <input id="Reaction_name" type="text" name="Reaction_name" class = "Reaction_name"> </p>
+               <label for="Enzyme_concentration">Enzyme concentration (mg/mL)</label>
+               <p> <input id="Enzyme_concentration" type="text" name="Enzyme_concentration" class = "Enzyme_concentration"></p>
+            </div>
+
+    <div class="five columns">
+        
+                    <label for="Input_Sequence_name">Sequence name</label>
+               <p> <input id="Input_Sequence_name" type="text" name="Sequence_name" class = "Sequence_name">  </p>
+                    <label for="Input_aminoacid_sequence">Amino acid sequence</label>
+               <p> <input id="AA_sequence" type="text" name="AA_sequence" class = "AA_sequence"></p>
+                    <label for="Input_structure_type">Structure type</label>
+                    <select id="Input_structure_type" name = "Structure" class = "Structure">
+                <p> <option value="Monomer"> Monomer </option> </p>
+                <p> <option value="Dimer"> Dimer </option></p>
+                <p> <option value="Trimer"> Trimer </option></p>
+                <p> <option value="Tetramer"> Tetramer </option> </p>
+                <p> <option value="Pentamer"> Pentamer </option></p>
+                <p> <option value="Hexamer"> Hexamer </option></p>
+        </select></p>
+        </div>
+       
+
+</div>
+
+<hr style="color:black; size:8px; border-width: 3px">
+
+<h2> Reaction conditions </h2>
+
+    <div class="row" style="position: relative">
+        <div class="three columns">
+            <label for="exampleRecipientInput">Enzyme formulation</label>
+               <p> <select id="Input_enzyme_purification" name = "enzyme_state" class = "Enzyme_Formulation" > </p>
+                  <option value="Crude cell extract">CCE</option>
+                  <option value="purified enzyme">purified enzyme</option>
+                  <option value="whole cell biocatalyst">whole cell biocatalyst</option>
+                  <option value="CatIB">CatIB</option>
+                </select>  
+            </div>   
+        <div class="three columns">
+                <label for="choice">purification method</label>
+                <p><select id="choice" name = "purification" class = "purification"></p>
+                     <p> <option value="Nickelchelate chromatography"> NiNTA </option> </p>
+                     <p> <option value="Anion exchange"> Anion exchange </option></p>
+                     <p> <option value="Reversed phase chromatography"> RP chromatography </option></p>
+                </select>       
+            </div>
+        <div class="three columns">
+                <label for="Temperatur">Reaction temperature</label>
+            <p><input id="Temperatur" type="text" name="temperatur" class = "Temperatur"> </p>
+            <label for="Input_pH">pH</label>
+            <p><input id="Input_pH" type="text" name = "pH" class = "pH"> </p>
+            <label for="Input_volume">Volume</label>
+            <p><input id="Input_volume" type="text" name ="volume" class = "Volume"> ml </p>
+            <label for="Reaction_vessel">Reaction vessel</label>
+            <p><input id="Reaction_vessel" type="text" name ="Reaction_vessel" class = "Reaction_vessel"> </p>    
+        </div>
+        <div class="three columns">
+            
+            <label for="Temperature_unit">Reaction temperature</label>
+            <p> <select id="Temperatur_unit" name="temperatur_unit"> </p>
+                <option value="°C">°C</option>
+                <option value="Kelvin">Kelvin</option>               
+             </select>  
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+             <br />
+
+            <label for="volume_unit">Volume</label>
+            <select id="volume_unit" name="volume_unit" class = "volume_unit">
+                <option value="L">l</option>
+                <option value="mL">ml</option>  
+                <option value="µL">ul</option>             
+             </select> 
+        </div>
+    
+    </div>
+
+
+
+<h2> Substrates, cofactors and products </h2>
+
+<div class="ten columns">
+                
+        <h4 id = Reactants1> Add Reactant <strong>+</strong> </h4>
+
+    </div>
+
+            <div class="row" id="Reactants">
+            <div class = "three columns">
+                
+                <h5>Substrate name</h5>
+            </div>
+
+            <div class = "three columns">
+                
+                    <h5>Concentration value</h5>
+                </div>
+            
+            <div class = "two columns">
+                
+            <h5>Concentration unit</h5>
+            </div>
+            <div class = "two columns">
+            <h5>reactant kind</h5>
+            </div>
+
+            
+
+
+    
+         
+
+                  
+                        <div class="row">
+                            <div class="three columns">
+                                    <p><input name="Substance_2" type="text" class = "Substrate_name"> </p>
+                                </div>
+                                <div class="three columns">
+                                <p><input name="Concentration_Substrate_2" type="text" class = "concentration_value"> </p>
+                                </div>
+                                <div class="two columns">
+                                <p> <select name="substance_unit_2" class = "concentration_unit"> </p>
+                                             <option value="mol/l">mol/l</option>
+                                             <option value="mmol/l">mmol/l</option>
+                                             <option value="umol/l">µmol/l</option>
+                                             <option value="nmol/l">nmol/l</option>
+                                             <option value="mL/l">mL/l</option>
+                                             <option value="µg/l">ug/l</option>
+                                               </select> 
+                                </div>
+                                <div class="two columns">
+                                <p> <select name="select_substrate_2" class = "reactant_kind"> </p>
+                                             <option value="Substrate">Substrate</option>
+                                             <option value="Cofactor">Cofactor</option>
+                                             <option value="Product">Product</option>
+                                             <option value="Additive">Additive</option>
+                                            </select>
+                                </div>
+                            </div>
+
+
+
+                    </p>
+
+            
+
+
+            </div>
+        </div>
+
+   
+
+            
+
+<hr style="color:black; size:8px; border-width: 3px">
+
+<div class = "row">
+    <!--<p> <a href="static\Beispiel.xlsx" id="download_link" download="Beispiel.xlsx"  > Upload Form </a> </p> -->
+    <p><input type=file name ="filename" id = "input"></p>
+   <!--<p> <a href = "/transmission/Auswertung"> <button id = "submit"> submit </button> </a></p> -->
+    <p> <button id = "submit1"> submit </button> </p>
+</div>
+
+</div>
+
+<div id = "divelement">
+
+</div>
+
+
+
+
+   
+</div>
+</body>
+
+</html>

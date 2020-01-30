@@ -52,7 +52,7 @@ def transmission():
         df = pd.read_excel(request.files["filename"])
         print(data)
         
-        #print(df)
+      
 
         experiment = EnzymeMLwriter(params_enzymeML, "EnzymeML.xml", request.files["filename"])
         experiment.write()
@@ -70,9 +70,6 @@ def transmission():
         #print(concentrations)
         graphs = np.delete(headers, 0)
         #print(graphs)
-
-        
-
 
         for i in graphs:
             ax.plot(concentrations, df[i], color = "black", marker = "^")
@@ -94,19 +91,9 @@ def Auswertung():
   
     values = input_values["data"]
     print(values)
-   
 
-
-
-   
-
-     
     return render_template("Auswertung.html", values = values)
         
-
-        
-
-
 
 if __name__=="__main__":
     app.run(port=8000, debug=True)

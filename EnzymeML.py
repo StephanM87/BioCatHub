@@ -7,9 +7,10 @@ import os
 
 
 class EnzymeMLwriter:
-    def __init__(self, parameters, name):
+    def __init__(self, parameters, name, filename):
         self.parameters = parameters
         self.name = name 
+        self.filename = filename
         #print(self.parameters)
 
     def write(self):
@@ -129,7 +130,7 @@ class EnzymeMLwriter:
                 }, reac
             )
 
-        data = pd.read_excel(r"C:\Users\Malzacher\Desktop\Beispiel.xlsx")
+        data = pd.read_excel(self.filename)
         print(data)
 
         form = enzml.EnzymeMLFormat()

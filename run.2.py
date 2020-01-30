@@ -54,7 +54,7 @@ def transmission():
         
         #print(df)
 
-        experiment = EnzymeMLwriter(params_enzymeML, "EnzymeML.xml")
+        experiment = EnzymeMLwriter(params_enzymeML, "EnzymeML.xml", request.files["filename"])
         experiment.write()
     
         fig, ax = plt.subplots()

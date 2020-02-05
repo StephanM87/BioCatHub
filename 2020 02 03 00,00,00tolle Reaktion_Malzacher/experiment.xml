@@ -8,18 +8,18 @@
             <rdf:Bag>
               <rdf:li rdf:parseType="Resource">
                 <vCard4:hasName rdf:parseType="Resource">
-                  <vCard4:family-name>Mack</vCard4:family-name>
-                  <vCard4:given-name>Stephamn</vCard4:given-name>
+                  <vCard4:family-name>Malzacher</vCard4:family-name>
+                  <vCard4:given-name>Stephan</vCard4:given-name>
                 </vCard4:hasName>
                 <vCard4:hasEmail>s.malzacher@fz-juelich.de</vCard4:hasEmail>
               </rdf:li>
             </rdf:Bag>
           </dcterms:creator>
           <dcterms:created rdf:parseType="Resource">
-            <dcterms:W3CDTF>2020-01-30T14:04:25Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2020-02-03T11:10:27Z</dcterms:W3CDTF>
           </dcterms:created>
           <dcterms:modified rdf:parseType="Resource">
-            <dcterms:W3CDTF>2020-01-30T14:04:25Z</dcterms:W3CDTF>
+            <dcterms:W3CDTF>2020-02-03T11:10:27Z</dcterms:W3CDTF>
           </dcterms:modified>
         </rdf:Description>
       </rdf:RDF>
@@ -70,7 +70,7 @@
           </enzymeml:protein>
         </annotation>
       </species>
-      <species metaid="META_SPECIES_1" sboTerm="SBO:0000015" id="s1" name="Thiamine pyrophosphate" compartment="c0" initialConcentration="200" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
+      <species metaid="META_SPECIES_1" sboTerm="SBO:0000015" id="s1" name="Thiamine pyrophosphate" compartment="c0" initialConcentration="0" hasOnlySubstanceUnits="false" boundaryCondition="false" constant="false"/>
     </listOfSpecies>
     <listOfReactions>
       <annotation>
